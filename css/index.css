@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.sessao_inicial{
+    position: relative;
+}
+.main_elemnts{
+    padding: 5rem 0 0 10rem;
+}
+h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: #55a08a;
+    font-weight: lighter;
+}
+p:nth-child(2){
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+p:nth-child(3){
+    font-size: 1.3rem;
+}
+.central_image{
+    display: none;
+    /*justify-content: center;*/
+}
+.botoes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+.botoes a{
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #55a08a;
+    padding: 0.5rem 1rem;
+    color: #55a08a;
+    border-radius: 3px;
+    max-width: 200px;
+}
+.botoes a:nth-child(2){
+    margin-left: 3rem;
+    background-color: #55a08a;
+    color: #fff;
+}
+.corner_image{
+    position: absolute;
+    display: flex;
+    bottom: -20rem;
+    right: -20rem;
+    background-color: #55a08a;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+}
+.corner_image img{
+    margin: 4rem 0 0 3rem;
+    max-width: 50%;
+    max-height: 50%;
+}
+@media screen and (max-width: 1060px){
+    body{
+        overflow: auto;
+    }
+    .main_elemnts{
+        padding: 5rem 3rem 0 3rem;
+    }
+    .central_image{
+        display: flex;
+        justify-content: center
+    }
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        margin: 5rem;
+        justify-content: center;
+    }
+    .corner_image{
+        display: none;
+    }
+}
+@media screen and (max-width: 649px){
+    .sessao_inicial{
+        margin-bottom: 5rem;
+    }
+    h1{
+        font-size: 3rem;
+
+    }
+    p:nth-child(2){
+        font-size: 2rem;
+    }
+    p:nth-child(3){
+        font-size: 1rem;
+    }
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 3rem 0  5rem 0;
+    }
+    .botoes a{
+        font-size: 0.76rem;
+    }
+
+}

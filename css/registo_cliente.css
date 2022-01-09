@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-shape-divider-top-1641692644 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1641692644 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 500px;
+}
+
+.custom-shape-divider-top-1641692644 .shape-fill {
+    fill: #55a08a;
+}
+
+
+.formulario{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.div_formulario{
+
+}
+h1{
+    text-align: center;
+    color: #2F4858;
+    font-weight: bold;
+    font-size: 2rem;
+
+    margin-bottom: 3rem;
+}
+.formulario {
+    width: 50%;
+    margin: 10rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+
+    background-color: #55a08a;
+}
+.formulario input, .formulario select{
+    width: 96%;
+    margin: 0.4rem auto;
+    padding: 0.5rem;
+    font-weight: bold;
+
+
+    border-radius: 3px;
+    border: none;
+    outline-color: #FFA17A;
+}
+
+.formulario button, .iniciar_sessao_temporario{
+    width: 50%;
+    padding: 0.5rem;
+    margin: 2rem auto 0.5rem auto;
+
+    background-color: #2F4858;
+    color: #fff;
+
+    border: none;
+    border-radius: 5px;
+    transition: width 2s;
+}
+.formulario button:hover, .iniciar_sessao_temporario:hover{
+    width: 98%;
+}
+.formulario a{
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+
+    margin-top: 1rem;
+}
+
+
+@media screen and (min-width:1100px) {
+    .formulario {
+        width: 40%;
+    }
+    .formulario input{
+        width: 60%;
+        margin: 0.4rem auto;
+        padding: 0.5rem;
+        font-weight: bold;
+    
+    
+        border-radius: 3px;
+        border: none;
+        outline-color: #FFA17A;
+    }
+    .formulario select{
+        width: 63%;
+        margin: 0.4rem auto;
+        padding: 0.5rem;
+        font-weight: bold;
+    
+    
+        border-radius: 3px;
+        border: none;
+    }
+
+}
+@media screen and (max-width:630px) {
+    .formulario {
+        width: 85%;
+    }
+}
+

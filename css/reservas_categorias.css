@@ -1,0 +1,108 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*corpo*/
+
+#produtos h1{
+    margin-bottom: 5rem;
+}
+
+.produto_categoria{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.produto_categoria p{
+    color: #55a08a;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    margin: auto auto auto 3rem;
+}
+.produto_categoria a{
+    text-decoration: none;
+    color: #2F4858;
+    margin-right: 3rem;
+}
+.categoria_produto_itens{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+/*doaçaõ*/
+#doacao{
+    margin: 2rem auto;
+}
+.doacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    background-color: #6497C5;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2F4858;
+    width: 35%;
+    height: 25vh;
+}
+
+@media screen and (max-width: 790px){
+    .doacao{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+/*Responsividade*/
+@media screen and (min-width: 855px){
+    .produto_iten{
+        width: 30%;
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width: 577px){
+    .produto_iten{
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+    .search_input{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 577px){
+    .search_input{
+        min-width: 25rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .produto_iten{
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+

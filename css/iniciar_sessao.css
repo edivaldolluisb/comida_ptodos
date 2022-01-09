@@ -1,0 +1,77 @@
+
+.logo_iniciar{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: auto auto 3rem auto;
+}
+.logo_iniciar img{
+    width: 9rem;
+}
+
+
+.remember_me{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 80%;
+    margin: 1rem 0 0;
+}
+#remember_me_button{
+    width: 5%;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+label{
+    width: 10rem;
+    margin-left: 1rem;
+}
+
+#botao_registar{
+    width: 47%;
+    padding: 0.4rem;
+    margin: 3rem auto 0.5rem auto;
+    font-size: 0.9rem;
+
+    background-color: #fff;
+    color: #2F4858;
+
+    border: none;
+    border-radius: 5px;
+    transition: width 2s;
+}
+#botao_registar:hover{
+    width: 96%;
+    padding: 0.4rem;
+    margin: 2rem auto 0.5rem auto;
+    font-size: 0.9rem;
+
+    background-color: #fff;
+    color: #2F4858;
+
+    border: none;
+    border-radius: 5px;
+}
+@media screen and (min-width:1100px) {
+    .formulario {
+        width: 30%;
+    }
+    .formulario input{
+        width: 96%;
+        margin: 0.4rem auto;
+        padding: 0.5rem;
+        font-weight: bold;
+    
+    
+        border-radius: 3px;
+        border: none;
+        outline-color: #FFA17A;
+    }
+
+
+}

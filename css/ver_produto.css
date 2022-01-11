@@ -1,0 +1,352 @@
+
+
+main{
+    padding: 2rem;
+}
+.imagem_produto{
+    background-image: url('../imagens/pexels-daria-shevtsova-704971.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+.imagem_produto p{
+    position: absolute;
+    bottom: 0;
+
+    background-color: #fff;
+    padding: 2rem;
+    border-top-right-radius: 20px;
+}
+
+#sobre_produto, .poder_recceber{
+    display: flex;
+    flex-direction: column;
+}
+.favorito{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 2rem auto 2rem 0;
+}
+.favorito i{
+    font-size: 1.5rem;
+    color: #55a08a;
+}
+.favorito p{
+    margin-left: 1rem;
+}
+
+.tipo_produto{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#tipo_produto_preco{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 1rem auto;
+    padding-bottom: 0.3rem;
+
+    border-bottom: 2px solid #55a08a;
+}
+#tipo_produto_preco div, .local, .poder_recceber div{
+    display: flex;
+    flex-direction: row;
+}
+#tipo_produto_preco div p, .local p{
+    margin-left: 1rem;
+}
+#preco{
+    font-weight: bolder;
+}
+.local{
+    margin: 1rem 0;
+    padding-bottom: 0.3rem;
+
+    border-bottom: 2px solid #55a08a;
+}
+
+.poder_recceber{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.poder_recceber > p:first-of-type{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.poder_recceber div{
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.poder_recceber div i{
+    margin-right: 1rem;
+}
+#escolher_reserva{
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto;
+}
+#escolher_reserva button{
+    background-color: #55a08a;
+    font-weight: bolder;
+    border: none;
+    border-radius: 3px;
+    padding: 1rem 3rem;
+}
+
+
+
+/*Qantidade e pagamento*/
+#quantidade_pagamento{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.selecionar_quantidade_produto{
+    position: absolute;    
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60%;
+
+    padding-top: 2rem;
+}
+#fechar_quantidade, #fechar_metodo_pagamento{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.selecionar_quantidade_produto > p, .introduzir_quantidade, #preco_total_final, .salvar_dados_pagamento{
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.selecionar_quantidade_produto > p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #55a08a;
+
+    margin-bottom: 2rem;
+}
+.introduzir_quantidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.introduzir_quantidade i{
+    color: #55a08a;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.introduzir_quantidade input{
+    text-align: center;
+    font-weight: bold;
+    width: 5rem;
+    border: none;
+}
+#preco_total_final{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    border-top: 2px solid #55a08a;
+    border-bottom: 2px solid #55a08a;
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
+}
+#preco_total_final p:last-of-type{
+    font-weight: bold;
+}
+#reservar_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+}
+#reservar_button button{    
+    background-color: #55a08a;
+    color: #fff;
+    font-weight: bold;
+
+    margin-bottom: 2rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 3px;
+
+}
+.amostra_metodo_pagamento i{
+    font-size: 2.5rem;
+    color: #2F4858;
+}
+.amostra_metodo_pagamento i:last-of-type{
+    margin-left: 1rem;
+}
+
+
+/*Selecionar método de pagamento*/
+.tipos_pagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 1rem auto auto 4rem;
+}
+.tipos_pagamento button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+
+    transition: padding 1s;
+}
+.tipos_pagamento button:hover{
+    background-color: #55a08a;
+    color: #2F4858;
+    padding: 0.4rem 0.5rem;
+    border-radius: 3px;
+}
+.tipos_pagamento i{
+    color: #2F4858;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.tipos_pagamento button:first-of-type{
+    margin-bottom: 2rem;
+}
+
+/*introduzir dados do cartão*/
+
+.input_dados_cartao {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+.input_dados_cartao div{
+    display: flex;
+    justify-content: space-between;
+}
+.input_dados_cartao input{
+    padding: 0.3rem;
+    margin: 0.6rem 0.5rem;
+}
+.input2{
+    width: 50%;
+}
+.input_dados_cartao input:last-child{
+    width: 35%;
+}
+.salvar_dados_pagamento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 0px;
+    bottom: -2px;
+    background-color: #2F4858;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #55a08a;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.cancelar_pagar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 10%;
+}
+.cancelar_pagar button{
+    background-color: #55a08a;
+    color: #fff;
+    font-weight: bold;
+
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 3px;
+}
+.cancelar_pagar button:first-of-type{
+    background-color: #fff;
+    color: #55a08a;
+    border: 1px solid #55a08a;
+}
+.cancelar_pagar button:last-child{
+    margin-left: 1rem;
+    padding: 0.5rem 3rem;
+}
+
+
+

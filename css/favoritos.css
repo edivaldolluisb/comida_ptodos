@@ -1,0 +1,41 @@
+
+.header_favoritos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem auto 5rem 2rem;
+}
+.header_favoritos i{
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #55a08a;
+    
+}
+.header_favoritos p{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #55a08a;
+}
+
+.produto_iten{
+    margin-bottom: 4rem;
+}
+
+.produto_detail{
+    position: relative;
+}
+.produto_detail p:nth-child(2), .produto_detail p:nth-child(3){
+    font-weight: normal;
+}
+.produto_detail i{
+    position: absolute;
+    color: #55a08a;
+    bottom: 0.1em;
+    right: 0.2em;
+    font-size: 2rem;
+
+    bottom: 1;
+    right: 0;
+}
+

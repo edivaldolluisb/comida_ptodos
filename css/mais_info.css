@@ -1,0 +1,26 @@
+
+
+#mais_info_options ul{
+    margin: 1rem;
+}
+#mais_info_options li{
+    margin-bottom: 2rem;
+    padding: 0.3rem;
+    list-style: none;
+}
+
+#mais_info_options li a, #mais_info_options button{
+    text-decoration: none;
+    color: #2F4858;
+    font-size: 1rem;
+
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+}
+#mais_info_options li a > i, #mais_info_options button > i{
+    margin-right: 0.8rem;
+}
+#mais_info_options button{
+    border: none;
+    background-color: #fff;
+}

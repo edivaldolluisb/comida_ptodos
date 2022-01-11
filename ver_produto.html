@@ -28,7 +28,7 @@
                 <ul>
                     <li><a href="./reservas_categoria.html">Menu</a></li>
                     <li><a href="#">Favoritos</a></li>
-                    <li><a href="#">Mais</a></li>
+                    <li><a href="./mais_info.html">Mais</a></li>
                     <li><a href="#">Log out</a></li>
                 </ul>
             </div>
@@ -76,25 +76,25 @@
                     </div>
                 </div>
                 <div id="escolher_reserva">
-                    <button>Reservar</button>
+                    <button id="abrir_quantidade_div">Reservar</button>
                 </div>
             </div>
         </section>
         <section id="quantidade_pagamento">
-            <div class="selecionar_quantidade_produto">
+            <div class="selecionar_quantidade_produto" id="selecionar_quantidade_produto_div">
                 <p><i id="fechar_quantidade" class="fas fa-arrow-left"></i>Quantidade</p>
                 <div class="introduzir_quantidade">
                     <i class="fas fa-minus-circle"></i>
-                    <input type="number" value="1" name="" id="">
+                    <input type="number" value="1" name="" id="input_prod_qt">
                     <i class="fas fa-plus-circle"></i>
                 </div>
 
                 <div id="preco_total_final">
                     <p>Total:</p>
-                    <p><span>3.99 </span>€</p>
+                    <p><span class="preco_tot_final">3.99 </span> €</p>
                 </div>
                 <div id="reservar_button">
-                    <button>Reservar agora</button>
+                    <button id="abrir_pay_metodo_div">Reservar agora</button>
                     <div class="amostra_metodo_pagamento">
                         <i class="fas fa-credit-card"></i>
                         <i class="fab fa-paypal"></i>
@@ -106,14 +106,14 @@
                 <p><i id="fechar_metodo_pagamento" class="fas fa-arrow-left"></i>Métodos de pagamento</p>
 
                 <div class="tipos_pagamento">
-                    <button><i class="fas fa-credit-card"></i> <span>Cartão</span></button>
+                    <button id="abrir_card_select_div"><i class="fas fa-credit-card"></i> <span>Cartão</span></button>
                     <button><i class="fab fa-paypal"></i><span>PayPal</span></button>
                 </div>
 
             </div>
             <!--Adicionar dados do cartão-->
-            <div id="adicionar_dados_cartao" class="selecionar_quantidade_produto">
-                <p><i id="fechar_metodo_pagamento" class="fas fa-arrow-left"></i>Cartão de Pagamento</p>
+            <div id="adicionar_dados_cartao" class="selecionar_quantidade_produto ">
+                <p><i id="fechar_dados_card" class="fas fa-arrow-left"></i>Cartão de Pagamento</p>
 
                 <div class="input_dados_cartao">
                     <input type="number" class="input1" placeholder="Numero de cartão">
@@ -147,6 +147,7 @@
     </main>
 
     <script src="./js/menu.js"></script>
+    <script src="./js/ver_produto.js"></script>
 </body>
 
 </html>

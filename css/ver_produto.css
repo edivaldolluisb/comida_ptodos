@@ -104,6 +104,7 @@ main{
 
 /*Qantidade e pagamento*/
 #quantidade_pagamento{
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -126,7 +127,10 @@ main{
 
     padding-top: 2rem;
 }
-#fechar_quantidade, #fechar_metodo_pagamento{
+#selecionar_quantidade_produto_div, #selecionar_metodo_pagamento, #adicionar_dados_cartao{
+    display: none;
+}
+#fechar_quantidade, #fechar_metodo_pagamento, #fechar_dados_card{
     margin-right: 1rem;
     cursor: pointer;
 }

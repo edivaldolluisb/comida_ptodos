@@ -30,12 +30,21 @@
 }
 .produto_detail i{
     position: absolute;
-    color: #55a08a;
     bottom: 0.1em;
     right: 0.2em;
-    font-size: 2rem;
 
-    bottom: 1;
-    right: 0;
+    color: #55a08a;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+
+/*Responsividade*/
+@media screen and (min-width: 1210px){
+    .produto_iten{
+        width: 20%;
+        margin: auto 0.1em 3rem;
+    }
 }
 

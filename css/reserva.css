@@ -110,14 +110,6 @@
 
 
 
-
-
-
-
-
-
-
-
 /*barra de pesquisa*/
 .search_container{
     display: flex;
@@ -166,7 +158,6 @@
     margin-bottom: 1rem;
 }
 .produto_detail{
-    line-height: 0.5;
     font-size: 14px;
     font-weight: bold;
 }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Comida P'ra Todos</title>
+    <link rel="shortcut icon" href="./imagens/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/reserva.css">
+    <link rel="stylesheet" href="./css/mais_info.css">
+</head>
+
+<body>
+    <header id="menu">
+        <div id="logo_menu">
+            <img src="./imagens/favicon.png" alt="logo comida p'ra todos">
+        </div>
+        <div class="abrir_menu">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav id="nav">
+            <div class="menu_li">
+                <ul>
+                    <li><a href="./reservas_categoria.html">Menu</a></li>
+                    <li><a href="./favoritos.html">Favoritos</a></li>
+                    <li><a href="#">Mais</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+            </div>
+            <div class="fechar_menu">
+                <i class="fa fa-times"></i>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section id="mais_info_options">
+            <ul>
+                <li><a href="#" class="mais_info_item"><i class="fas fa-address-book"></i> Pedidos</a></li>
+                <li><button id="abrir-detalhes-conta" class="mais_info_item"><i class="fas fa-user"></i> Detalhes da
+                        conta</button></li>
+                <li><button class="mais_info_item"><i class="far fa-question-circle"></i> Ajuda</button></li>
+                <li><a href="#" class="mais_info_item"><i class="fas fa-angle-right"></i> Termos e condições</a></li>
+            </ul>
+        </section>
+        <div id="detalhe_conta_div">
+            <div class="head_detalhe_conta">
+                <p><i class="fas fa-arrow-left" id="fechar_detalhe_conta"></i> Detalhes da conta</p>
+            </div>
+            <div id="dados_perfil">
+                <h1>Perfil</h1>
+                <form action="">
+                    <div>
+                        <label for="nome_user">Nome</label>
+                        <input type="text" id="nome_user" readonly>
+                    </div>
+                    <div>
+                        <label for="email_user">E-mail</label>
+                        <input type="email" id="email_user" readonly>
+                    </div>
+                    <div>
+                        <label for="num_tel_user">N.Telemovél</label>
+                        <input type="tel" id="num_tel_user" readonly>
+                    </div>
+                    <div>
+                        <label for="nif_user">NIF</label>
+                        <input type="number" id="nif_user" readonly>
+                    </div>
+                    <div>
+                        <label for="pais_user">Morada</label>
+                        <input type="text" id="morada_user" readonly>
+                    </div>
+                    <div id="buttons">
+                        <button type="button" id="btn_cancelar">Cancelar</button>
+                        <button type="button" id="btn_editar">Editar</button>
+                        <button id="btn_alterar" type="submit">Alterar</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+    </main>
+    <script>
+
+        /*abrir detalhes da conta*/
+        var abrir_detalheconta = window.document.querySelector('#abrir-detalhes-conta')
+        var detalhe_conta = window.document.querySelector('#detalhe_conta_div')
+        var fechar_detalheconta = window.document.querySelector('#fechar_detalhe_conta')
+        var opcoes = window.document.querySelector('#mais_info_options')
+
+        abrir_detalheconta.addEventListener("click", abrir_detalhes_conta);
+        function abrir_detalhes_conta() {
+            opcoes.style.display = 'none'
+            detalhe_conta.style.display = 'block'
+        }
+        fechar_detalheconta.addEventListener("click", fechar_detalhes_conta);
+        function fechar_detalhes_conta() {
+            opcoes.style.display = 'block'
+            detalhe_conta.style.display = 'none'
+        }
+
+
+
+        /*inputs*/
+        var input_nome = window.document.getElementsByTagName('INPUT')[0]
+        var input_email = window.document.getElementsByTagName('INPUT')[1]
+        var input_tel = window.document.getElementsByTagName('INPUT')[2]
+        var input_nif = window.document.getElementsByTagName('INPUT')[3]
+        var input_morada = window.document.getElementsByTagName('INPUT')[4]
+
+        var editar_btn = window.document.querySelector('#btn_editar')
+        var cancelar_btn = window.document.querySelector('#btn_cancelar')
+        var alterar_btn = window.document.querySelector('#btn_alterar')
+
+
+        editar_btn.addEventListener("click", tirar_readonly);
+        function tirar_readonly() {
+            input_nome.removeAttribute('readonly')
+            input_email.removeAttribute('readonly')
+            input_tel.removeAttribute('readonly')
+            input_nif.removeAttribute('readonly')
+            input_morada.removeAttribute('readonly')
+
+            cancelar_btn.style.display = 'inline-block'
+            alterar_btn.style.display = 'inline-block'
+            editar_btn.style.display = 'none'
+        }
+        cancelar_btn.addEventListener("click", colocar_readonly);
+        function colocar_readonly() {
+            input_nome.setAttribute('readonly', true)
+            input_email.setAttribute('readonly', true)
+            input_tel.setAttribute('readonly', true)
+            input_nif.setAttribute('readonly', true)
+            input_morada.setAttribute('readonly', true)
+
+            cancelar_btn.style.display = 'none'
+            alterar_btn.style.display = 'none'
+            editar_btn.style.display = 'inline-block'
+        }
+
+        
+        input_email.value = 'ola'
+    </script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

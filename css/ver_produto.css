@@ -260,7 +260,7 @@ main{
 .salvar_dados_pagamento{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* The switch - the box around the slider */

@@ -1,0 +1,55 @@
+
+#ver_reserva .fa-times::before{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+
+    font-size: 3rem;
+    color: #55a08a;
+}
+
+
+#ver_reserva > div{
+    width: 70%;
+    margin: auto;
+    padding-top: 8rem;
+}
+#ver_reserva .imagem_reserva{
+    width: 100%;
+    background-color: #55a08a; 
+    height: 250px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+    margin-bottom: 3.5rem;
+}
+.detalhe_reserva{
+    font-weight: bold;
+}
+.preco_reserva{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #55a08a;
+}
+
+.cancelar_finalizarreserva{
+    margin-top: 4rem;
+}
+.cancelar_finalizarreserva button{
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 0.5rem 2rem;
+}
+.cancelar_finalizarreserva button:first-of-type{
+    background-color: #2F4858;
+    margin-right: 2rem;
+}
+.cancelar_finalizarreserva button:first-of-type:hover{
+    background-color: #EA4C46;
+    margin-right: 2rem;
+}
+.cancelar_finalizarreserva button:last-of-type{
+    background-color: #55a08a;
+}

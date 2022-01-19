@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Comida P'ra Todos</title>
-    <link rel="shortcut icon" href="./imagens/favicon.png">
+    <link rel="shortcut icon" href="../imagens/favicon.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -18,7 +18,7 @@
 <body>
     <header id="menu">
         <div id="logo_menu">
-            <img src="./imagens/favicon.png" alt="logo comida p'ra todos">
+            <img src="../imagens/favicon.png" alt="logo comida p'ra todos">
         </div>
         <div class="abrir_menu">
             <i class="fa fa-bars"></i>
@@ -26,9 +26,9 @@
         <nav id="nav">
             <div class="menu_li">
                 <ul>
-                    <li><a href="./reservas_categoria.html">Menu</a></li>
-                    <li><a href="./favoritos.html">Favoritos</a></li>
-                    <li><a href="./mais_info.html">Mais</a></li>
+                    <li><a href="../reservas_categoria.html">Menu</a></li>
+                    <li><a href="../favoritos.html">Favoritos</a></li>
+                    <li><a href="../mais_info.html">Mais</a></li>
                     <li><a href="#">Log out</a></li>
                 </ul>
             </div>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div id="escolher_reserva">
-                    <button id="abrir_quantidade_div">Reservar</button>
+                    <button id="abrir_quantidade_div">Pedir</button>
                 </div>
             </div>
         </section>
@@ -90,68 +90,55 @@
                         <i class="fas fa-plus-circle"></i>
                     </div>
 
-                    <div id="preco_total_final">
+                    <div id="preco_total_final" style="display: none;">
                         <p>Total:</p>
                         <p><span class="preco_tot_final">3.99 </span> €</p>
                     </div>
                     <div id="reservar_button">
                         <button id="abrir_pay_metodo_div" type="button">Reservar agora</button>
-                        <div class="amostra_metodo_pagamento">
-                            <i class="fas fa-credit-card"></i>
-                            <i class="fab fa-paypal"></i>
-                        </div>
-                    </div>
-                </div>
-                <!--Selecionar metodo de pagamento-->
-                <div id="selecionar_metodo_pagamento" class="selecionar_quantidade_produto">
-                    <p><i id="fechar_metodo_pagamento" class="fas fa-arrow-left"></i>Métodos de pagamento</p>
-
-                    <div class="tipos_pagamento">
-                        <button id="abrir_card_select_div" type="button"><i class="fas fa-credit-card"></i>
-                            <span>Cartão</span></button>
-                        <button type="button"><i class="fab fa-paypal"></i><span>PayPal</span></button>
-                    </div>
-
-                </div>
-                <!--Adicionar dados do cartão-->
-                <div id="adicionar_dados_cartao" class="selecionar_quantidade_produto ">
-                    <p><i id="fechar_dados_card" class="fas fa-arrow-left"></i>Cartão de Pagamento</p>
-
-                    <div class="input_dados_cartao">
-                        <input type="number" class="input1" placeholder="Numero de cartão">
-                        <div>
-                            <input type="number" class="input2" placeholder="Data de validade">
-                            <input type="number" class="input3" placeholder="CVC/CVV">
-                        </div>
 
                     </div>
-                    <div class="salvar_dados_pagamento">
-                        <label for="salvar_dados">Salvar para próximo pagamento</label>
-                        <label class="switch">
-                            <input id="salvar_dados" type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                    <div class="cancelar_pagar">
-                        <button>Cancelar</button>
-                        <!--link temporário, apagar depois da apresentação-->
-                        <a href="./processo_finalizado.html">
-                            <button style="background-color: #55a08a;
-                        color: #fff;
-                        font-weight: bold;" type="button">Pagar</button>
-                        </a>
-                        <!--<button>Pagar</button>-->
-
-                    </div>
-
                 </div>
             </form>
 
         </section>
     </main>
 
-    <script src="./js/menu.js"></script>
-    <script src="./js/ver_produto.js"></script>
+    <script>
+
+        /*calcuar quantidade*/
+
+        var reduzir = window.document.querySelector('.fa-minus-circle')
+        var aumentar = window.document.querySelector('.fa-plus-circle')
+        var input = window.document.querySelector('#input_prod_qt')
+
+        reduzir.addEventListener("click", reduzir_qt);
+
+        var valor
+        /*reduzir quantidade*/
+        function reduzir_qt() {
+            x = parseInt(input.value)
+            console.log(x)
+            if (x > 0) {
+                valor = x - 1
+                input.value = valor
+
+            } else {
+                input.value = 0
+            }
+        }
+        aumentar.addEventListener("click", aumentar_qt);
+        /*aumentar quantidade*/
+        function aumentar_qt() {
+
+            x = parseInt(input.value)
+            console.log(x)
+            input.value = x + 1
+        }
+    </script>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/ver_produto.js"></script>
 </body>
 
 </html>

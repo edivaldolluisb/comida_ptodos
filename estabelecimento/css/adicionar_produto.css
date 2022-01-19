@@ -1,0 +1,81 @@
+
+#ver_reserva .fa-times::before{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+
+    font-size: 3rem;
+    color: #55a08a;
+}
+
+.input_fields{
+    width: 80%;
+    margin: auto;
+    margin-top: 8rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+.input_fields input{
+    border: 2px solid #55a08a;
+    border-radius: 3px;
+
+    padding: 0.5rem;
+    
+}
+.nome_produto{
+    flex: 90%;
+}
+.preco{
+    flex: 30%;
+}
+.tipo_produto{
+    flex: 60%;
+}
+.data_limite{
+    flex: 40%;
+}
+.input_fields label{
+    flex: 45%;
+    display: flex;
+    align-items: center;
+    color: #55a08a;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.input_fields label i{
+    margin-right: 1rem;
+}
+.botoes{
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+}
+.botoes button{
+    border: none;
+    padding: 0.5rem 2rem;
+}
+.botoes button{
+    border: none;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+}
+
+.botoes button:first-of-type{
+    background-color: #EA4C46;
+    color: #fff;
+    margin-right: 2rem;
+}
+.botoes button:last-of-type{
+    background-color: #55a08a;
+    color: #fff;
+    margin-right: 2rem;
+}
+.botoes button:last-of-type:hover{
+    background-color: #2F4858;
+    color: #fff;
+    margin-right: 2rem;
+}
+

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#listar_produtos{
+    width: 70%;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    color: #55a08a;
+    margin-bottom: 3rem;
+}
+.mini_menus{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+.mini_menus a/*, .mini_menus button*/{
+    background-color: #2F4858;
+    color: #fff;
+
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+
+    /*for link */
+    text-decoration: none;
+    /*for button*/
+    border: none;
+}
+.mini_menus a:hover/*, .mini_menus button:hover*/{
+    background-color: #3D99DA;
+    color: #fff;
+}
+.lista_reservas {
+    padding-top: 2rem;
+    border-top:  3px solid #55a08a;
+    margin-top: 3rem;
+}
+.reserva_listada{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #55a08a;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+}
+.dados1, .dados2{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.dados1 p, .dados2 p{
+    margin-bottom: 0;
+}
+.dados1 > p{
+    margin-right: 1rem;
+}
+.dados1 p:first-of-type{
+    margin-left: 1rem;
+}
+.dados1 p:last-of-type{
+    font-weight: bold;
+}
+.dados2{
+    justify-content: space-between;
+}
+.dados2 a{
+    padding: 0.1rem 2rem;
+    background-color: #fff;
+    color: #2F4858;
+    text-decoration: none;
+}
+.dados2 a:hover{
+    background-color: #2F4858;
+    color: #fff;
+}
+
+
+/*Paginação*/
+.paginacao_reservas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    width: 70%;
+    margin: 5rem auto 2rem;
+
+}
+.paginacao_reservas a{
+    background-color: #2F4858;
+    color: #fff;
+    text-decoration: none;
+
+    padding: 0.3rem 1rem;
+
+}
+.paginacao_reservas a:hover{
+    background-color: #3D99DA;
+    color: #fff;
+    text-decoration: none;
+
+    padding: 0.3rem 1rem;
+
+}
+.paginacao_reservas a.current_page{
+    background-color: #3D99DA;
+}
+
+
+/*responsividade*/
+
+@media screen and (max-width:1300px) {
+    .reserva_listada{
+        font-size: 1rem;
+    }
+    
+}

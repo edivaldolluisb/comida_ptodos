@@ -1,7 +1,15 @@
+
+
+#listar_produtos {
+    width: 90%;
+    margin: auto;
+}
+
 .listar_meus_produtos {
     padding-top: 2rem;
     border-top:  3px solid #55a08a;
     margin-top: 3rem;
+    margin-bottom: 2rem;
 
     display: flex;
     flex-flow: row wrap;

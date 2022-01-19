@@ -19,7 +19,7 @@ h1{
     justify-content: flex-end;
     gap: 1rem;
 }
-.mini_menus a, .mini_menus button{
+.mini_menus a/*, .mini_menus button*/{
     background-color: #2F4858;
     color: #fff;
 
@@ -31,7 +31,7 @@ h1{
     /*for button*/
     border: none;
 }
-.mini_menus a:hover, .mini_menus button:hover{
+.mini_menus a:hover/*, .mini_menus button:hover*/{
     background-color: #3D99DA;
     color: #fff;
 }
@@ -83,3 +83,33 @@ h1{
     color: #fff;
 }
 
+
+/*Paginação*/
+.paginacao_reservas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    width: 70%;
+    margin: 5rem auto 2rem;
+
+}
+.paginacao_reservas a{
+    background-color: #2F4858;
+    color: #fff;
+    text-decoration: none;
+
+    padding: 0.3rem 1rem;
+
+}
+.paginacao_reservas a:hover{
+    background-color: #3D99DA;
+    color: #fff;
+    text-decoration: none;
+
+    padding: 0.3rem 1rem;
+
+}
+.paginacao_reservas a.current_page{
+    background-color: #3D99DA;
+}

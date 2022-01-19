@@ -135,6 +135,34 @@
             console.log(x)
             input.value = x + 1
         }
+
+
+        /*abrir e fechar quantidade*/
+
+        var sessao = window.document.querySelector('#quantidade_pagamento')
+
+        var abrir_quantidade = window.document.querySelector('#abrir_quantidade_div')
+
+        var quantidade = window.document.querySelector('#selecionar_quantidade_produto_div')
+       
+
+
+
+
+        /*abrir*/
+        abrir_quantidade.addEventListener("click", abrir_quant);
+
+        function abrir_quant() {
+            sessao.style.display = 'block'
+            quantidade.style.display = 'flex'
+        }
+
+        /*fechar*/
+        fechar_quantidade.addEventListener("click", fechar_quant);
+
+        function fechar_quant() {
+            sessao.style.display = 'none'
+        }
     </script>
 
     <script src="../js/menu.js"></script>

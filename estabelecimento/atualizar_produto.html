@@ -15,29 +15,32 @@
 
     <link rel="stylesheet" href="../css/reserva.css">
     <link rel="stylesheet" href="../estabelecimento/css/adicionar_produto.css">
+    <link rel="stylesheet" href="../estabelecimento/css/atualizar_produto.css">
 </head>
 
 <body>
     <main>
 
         <section id="ver_reserva">
-            <a href="./estabelecimento_index.html"><i class="fa fa-times"></i></a>
-            <h1>Adicionar novo produto</h1>
             <form action="">
+                <a href="./estabelecimento_index.html"><i class="fa fa-times"></i></a>
+                <h1>Atualizar produto</h1>
                 <div class="input_fields">
-                    <input type="text" class="nome_produto" placeholder="Nome do produto">
-                    <input type="number" class="preco" placeholder="Preço">
-                    <input type="text" class="tipo_produto" placeholder="Tipo de produto">
-                    <input type="datetime" class="data_limite" placeholder="Data limite">
+                    <input type="text" class="nome_produto" placeholder="Nome do produto" value="Doces e Salgados">
+                    <input type="number" class="preco" placeholder="Preço" value="4.03">
+                    <input type="text" class="tipo_produto" placeholder="Tipo de produto" value="Magic Box">
+                    <input type="datetime-local" class="data_limite" placeholder="Data limite" value="26-01-2022, 17:30">
                     <label for="imagem_prodt">
                         <i class="fas fa-camera"></i> Carregar foto
                     </label>
                     <input type="file" class="imagem_produto" id="imagem_prodt" hidden>
                 </div>
                 <div class="botoes">
-                    <button>cancelar</button><button>adicionar pedido</button>
+                    <button>cancelar</button><button>fazer atualização</button>
                 </div>
             </form>
+
+
         </section>
 
     </main>

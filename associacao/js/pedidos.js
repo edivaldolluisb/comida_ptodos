@@ -69,7 +69,7 @@ function showNotification() {
             icon: "../imagens/favicon.png"
         })
         notification.onclick = (e) => {
-            window.location.href = "http://127.0.0.1:5500/associacao/pedidos.html";
+            window.location.href = "https://edivaldolluisb.github.io/comida_ptodos/associacao/pedidos.html";
         };
     }
 

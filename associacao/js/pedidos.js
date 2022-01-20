@@ -37,13 +37,14 @@ myFunction()*/
 
 /*notificação*/
 
+/* verificar se o browser suporta notificação*/
 if (!window.Notification) {
     console.log('Browser does not support notifications.');
 } else {
     console.log('Suporta notificação')
 }
 
-
+/*pedir permissão*/
 console.log(Notification.permission);
 
 if (Notification.permission === "granted") {
@@ -55,24 +56,23 @@ if (Notification.permission === "granted") {
     });
 }
 
-function showNotification(estabelecimento) {
+/*mostrar notificação */
+function showNotification() {
 
     var x, i;
     x = document.querySelectorAll(".nome_associacao");
-    
 
     for (i = 0; i < x.length; i++) {
-        console.log(x[i].innerText)
+        
+        const notification = new Notification("Comida p'ra todos", {
+            body: "O seu pedido foi aceite por " + x[i].innerText,
+            icon: "../imagens/favicon.png"
+        })
+        notification.onclick = (e) => {
+            window.location.href = "http://127.0.0.1:5500/associacao/pedidos.html";
+        };
     }
 
-
-    const notification = new Notification("New message incoming", {
-        body: "O seu pedido foi aceite por " + estabelecimento,
-        icon: "../imagens/favicon.png"
-    })
-    notification.onclick = (e) => {
-        window.location.href = "http://127.0.0.1:5500/associacao/pedidos.html";
-    };
 }
 showNotification()
 

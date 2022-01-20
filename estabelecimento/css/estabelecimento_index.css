@@ -123,3 +123,10 @@ h1{
     }
     
 }
+@media screen and (max-width:800px) {
+    #listar_produtos{
+        width: 90%;
+        margin: auto;
+    }
+    
+}

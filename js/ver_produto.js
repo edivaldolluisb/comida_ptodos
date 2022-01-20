@@ -55,7 +55,6 @@ function fechar_dados_card() {
 }
 
 
-
 /*Calcular total*/
 
 var reduzir = window.document.querySelector('.fa-minus-circle')

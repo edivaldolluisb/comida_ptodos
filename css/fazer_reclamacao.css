@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#fazer_reclamacao{
+    display: grid;
+    place-items: center;
+}
+h1{
+    margin: 5rem;
+    font-size: 40px;
+    color: #55a08a;
+}
+#fazer_reclamacao > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+#fazer_reclamacao > div label{
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+#fazer_reclamacao > div input, #fazer_reclamacao > div textarea {
+    border: 2px solid #55a08a;
+    border-radius: 3px;
+    padding: 0.3rem;
+
+    font-weight: bold;
+}
+#fazer_reclamacao > div input{
+    margin-bottom: 2.5rem;
+}
+
+.botoes{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.botoes button{
+    border: none;
+    background-color: #55a08a;
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 3px;
+
+    font-weight: bold;
+}
+.botoes button:first-of-type{
+    background-color: #EA4C46;
+}

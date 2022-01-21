@@ -22,7 +22,7 @@ registar_user.addEventListener("click", function () {
             break;
         case 'associacao_social':
             console.log('tipo de usuario(associacao_social)')
-            window.location = 'http://127.0.0.1:5500/associacao/reservas_categoria.html'
+            window.location = 'https://edivaldolluisb.github.io/comida_ptodos/associacao/reservas_categoria.html'
             break;
 
     }

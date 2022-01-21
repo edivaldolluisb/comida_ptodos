@@ -17,6 +17,16 @@ self.addEventListener('install', function(event){
                 './index.html',
                 './favoritos.html',
                 './doar_dinheiro.html',
+                './css/',
+                './css/doar_dianheiro.css',
+                './css/favoritos.css',
+                './css/index.css',
+                './css/iniciar_sessao.css',
+                './css/mais_info.css',
+                './css/registo_cliente.css',
+                './css/reserva.css',
+                './css/reservas_categorias.css',
+                './css/ver_produto.css',
                 './estabelecimento',
                 './estabelecimento/adicionar_produto.html',
                 './estabelecimento/atualizar_produto.html',
@@ -29,16 +39,8 @@ self.addEventListener('install', function(event){
                 './estabelecimento/css/estabelecimento_index.css',
                 './estabelecimento/css/estabelecimento_produtos.css',
                 './estabelecimento/css/ver_reserva.css',
-                './css/',
-                './css/doar_dianheiro.css',
-                './css/favoritos.css',
-                './css/index.css',
-                './css/iniciar_sessao.css',
-                './css/mais_info.css',
-                './css/registo_cliente.css',
-                './css/reserva.css',
-                './css/reservas_categorias.css',
-                './css/ver_produto.css',
+                
+
 
 
             ])

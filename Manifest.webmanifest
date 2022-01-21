@@ -4,18 +4,18 @@
     "description": "Comida p'ra todos is a web app where community of Waste Warriors fighting food waste together. As a user, save meals from stores and food professionals around you.",
     "icons": [
       {
-        "src": "../imagens/box_logo_50.png",
+        "src": "./imagens/box_logo_50.png",
         "sizes": "50x50",
         "type": "image/png"
       },
       {
-        "src": "../imagens/box_logo_512.png",
+        "src": "./imagens/box_logo_512.png",
         "sizes": "512x512",
         "type": "image/png"
       }
     ],
-    "start_url": "../index.html",
+    "start_url": "/",
     "display": "fullscreen",
-    "theme_color": "#B12A34",
+    "theme_color": "#55a08a",
     "background_color": "#B12A34"
   }

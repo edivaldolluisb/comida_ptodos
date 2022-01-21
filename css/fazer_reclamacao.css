@@ -52,6 +52,20 @@ h1{
 
     font-weight: bold;
 }
-.botoes button:first-of-type{
+.botoes a button{
     background-color: #EA4C46;
+}
+
+
+
+
+/* responsividade */
+
+@media screen and (max-width:530px) {
+    #fazer_reclamacao > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
 }

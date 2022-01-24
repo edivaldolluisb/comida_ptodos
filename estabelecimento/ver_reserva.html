@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="../css/reserva.css">
     <link rel="stylesheet" href="../estabelecimento/css/ver_reserva.css">
+    <link rel="stylesheet" href="./css/processofinalizado.css">
 </head>
 
 <body>
@@ -22,9 +23,10 @@
 
         <section id="ver_reserva">
             <a href="./estabelecimento_index.html"><i class="fa fa-times"></i></a>
-                
+
             <div>
-                <div class="imagem_reserva" style="background-image: url('../imagens/pexels-daria-shevtsova-704971.jpg');">
+                <div class="imagem_reserva"
+                    style="background-image: url('../imagens/pexels-daria-shevtsova-704971.jpg');">
 
                 </div>
                 <div class="detalhe_reserva">
@@ -36,11 +38,20 @@
                     <p>Data da reserva: Hoje, 11:21</p>
                 </div>
                 <div class="cancelar_finalizarreserva">
-                    <button class="estabelecimento_cancelar_reserva">cancelar</button>
-                    <button class="estabelecimento_finalizar_reserva">finalizar</button>
+                    <button class="estabelecimento_cancelar_reserva"  type="button" id="cancel">cancelar</button>
+                    <button class="estabelecimento_finalizar_reserva"  type="button" id="f_atualizacao">finalizar</button>
                 </div>
             </div>
 
+        </section>
+
+        <!--caixa de dialogo de confirmação de ação-->
+        <section id="processo_finalizado_succes">
+            <div class="processo_finalizado_succes">
+                <i class="fa fa-check-circle"></i>
+                <p>Reserva finalizada!</p>
+                <a href="./estabelecimento_index.html"><button>ok</button></a>
+            </div>
         </section>
 
     </main>

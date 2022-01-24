@@ -15,15 +15,17 @@
 
     <link rel="stylesheet" href="../css/reserva.css">
     <link rel="stylesheet" href="../estabelecimento/css/ver_reserva.css">
+    <link rel="stylesheet" href="./css/processofinalizado.css">
 </head>
 
 <body>
     <main>
         <section id="ver_reserva">
             <a href="../estabelecimento/pedidos.html"><i class="fa fa-times"></i></a>
-                
+
             <div>
-                <div class="imagem_reserva" style="background-image: url('../imagens/pexels-daria-shevtsova-704971.jpg');">
+                <div class="imagem_reserva"
+                    style="background-image: url('../imagens/pexels-daria-shevtsova-704971.jpg');">
 
                 </div>
                 <div class="detalhe_reserva">
@@ -38,16 +40,26 @@
                 </div>
                 <div class="cancelar_finalizarreserva">
                     <button>eliminar</button>
-                    <button>concluir</button>
+                    <button type="button" id="f_atualizacao">concluir</button>
                 </div>
             </div>
 
+        </section>
+
+        <!--caixa de dialogo de confirmação de ação-->
+        <section id="processo_finalizado_succes">
+            <div class="processo_finalizado_succes">
+                <i class="fa fa-check-circle"></i>
+                <p>Pedido Concluido!</p>
+                <a href="./estabelecimento_produtos.html"><button>ok</button></a>
+            </div>
         </section>
 
     </main>
 
 
     <script src="../js/menu.js"></script>
+    <script src="./js/processo_finalizado.js"></script>
 </body>
 
 </html>

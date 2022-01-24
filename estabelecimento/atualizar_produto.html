@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../css/reserva.css">
     <link rel="stylesheet" href="../estabelecimento/css/adicionar_produto.css">
     <link rel="stylesheet" href="../estabelecimento/css/atualizar_produto.css">
+    <link rel="stylesheet" href="./css/processofinalizado.css">
+
 </head>
 
 <body>
@@ -23,30 +25,41 @@
 
         <section id="ver_reserva">
             <form action="">
-                <a href="./estabelecimento_index.html"><i class="fa fa-times"></i></a>
+                <a href="./estabelecimento_produtos.html"><i class="fa fa-times"></i></a>
                 <h1>Atualizar produto</h1>
                 <div class="input_fields">
                     <input type="text" class="nome_produto" placeholder="Nome do produto" value="Doces e Salgados">
                     <input type="number" class="preco" placeholder="Preço" value="4.03">
                     <input type="text" class="tipo_produto" placeholder="Tipo de produto" value="Magic Box">
-                    <input type="datetime-local" class="data_limite" placeholder="Data limite" value="26-01-2022, 17:30">
+                    <input type="datetime-local" class="data_limite" placeholder="Data limite"
+                        value="26-01-2022, 17:30">
                     <label for="imagem_prodt">
                         <i class="fas fa-camera"></i> Carregar foto
                     </label>
                     <input type="file" class="imagem_produto" id="imagem_prodt" hidden>
                 </div>
                 <div class="botoes">
-                    <button>cancelar</button><button>fazer atualização</button>
+                    <button type="button" id="cancel">cancelar</button><button type="button" id="f_atualizacao">fazer atualização</button>
                 </div>
             </form>
 
 
         </section>
 
+        <!--caixa de dialogo de confirmação de ação-->
+        <section id="processo_finalizado_succes">
+            <div class="processo_finalizado_succes">
+                <i class="fa fa-check-circle"></i>
+                <p>A atualização foi realizada com sucesso!</p>
+                <a href="./estabelecimento_produtos.html"><button>ok</button></a>
+            </div>
+        </section>
+
     </main>
 
 
     <script src="./js/menu.js"></script>
+    <script src="./js/processo_finalizado.js"></script>
 </body>
 
 </html>

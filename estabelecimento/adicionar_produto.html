@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="../css/reserva.css">
     <link rel="stylesheet" href="../estabelecimento/css/adicionar_produto.css">
+    <link rel="stylesheet" href="./css/processofinalizado.css">
 </head>
 
 <body>
@@ -35,15 +36,26 @@
                     <input type="file" class="imagem_produto" id="imagem_prodt" hidden>
                 </div>
                 <div class="botoes">
-                    <button>cancelar</button><button>adicionar pedido</button>
+                    <button type="button" id="cancel">cancelar</button><button type="button" id="f_atualizacao">adicionar pedido</button>
                 </div>
             </form>
+        </section>
+
+
+        <!--caixa de dialogo de confirmação de ação-->
+        <section id="processo_finalizado_succes">
+            <div class="processo_finalizado_succes">
+                <i class="fa fa-check-circle"></i>
+                <p>O produto foi adicionado com sucesso!</p>
+                <a href="./estabelecimento_produtos.html"><button>ok</button></a>
+            </div>
         </section>
 
     </main>
 
 
     <script src="./js/menu.js"></script>
+    <script src="./js/processo_finalizado.js"></script>
 </body>
 
 </html>

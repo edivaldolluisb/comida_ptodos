@@ -1,0 +1,30 @@
+#processo_finalizado_succes{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-color: rgb(255, 255, 255, 0.6);
+    /*display: grid;*/
+    display: none;
+    place-items: center;
+}
+
+.processo_finalizado_succes{
+    background-color: #55a08a;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.processo_finalizado_succes i{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+ }
+.processo_finalizado_succes button{
+   border: none;
+   padding: 0.3rem 2rem;
+   font-weight: bold;
+}

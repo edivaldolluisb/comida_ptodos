@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fazer reclamação</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
     <link rel="stylesheet" href="./css/fazer_reclamacao.css">
+    <link rel="stylesheet" href="./estabelecimento/css/processofinalizado.css">
 
 </head>
 
@@ -25,11 +31,36 @@
             <textarea name="" id="reclamacao" cols="30" rows="10"></textarea>
             <div class="botoes">
                 <a href="./mais_info.html"><button>cancelar</button></a>
-                <button>enviar</button>
+                <button type="button" id="f_eliminacao">enviar</button>
             </div>
 
         </div>
     </section>
+
+    <!--caixa de dialogo de eliminar registo-->
+    <section id="processo_eliminado_succes">
+        <div class="processo_finalizado_succes">
+            <i class="fa fa-check-circle"></i>
+            <p>Reclamação registada!</p>
+            <a href="./mais_info.html" style="margin-top: 2rem;"><button>ok</button></a>
+        </div>
+    </section>
+
+
+
+    <!--eliminar pedido-->
+    <script>
+        var btn_elimicacao = window.document.querySelector('#f_eliminacao')
+        var p_eliminado_succes = window.document.querySelector('#processo_eliminado_succes')
+
+
+        btn_elimicacao.addEventListener('click', f_eliminar)
+
+        function f_eliminar() {
+            p_eliminado_succes.style.display = 'grid'
+        }
+
+    </script>
 </body>
 
 </html>

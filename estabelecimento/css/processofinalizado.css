@@ -27,4 +27,7 @@
    border: none;
    padding: 0.3rem 2rem;
    font-weight: bold;
+   background-color: #fff;
+   border-radius: 3px;
+   cursor: pointer;
 }

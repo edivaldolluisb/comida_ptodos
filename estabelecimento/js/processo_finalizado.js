@@ -36,5 +36,5 @@ function f_atualizacao() {
 var cancel = window.document.querySelector('#cancel')
 cancel.addEventListener('click', cancel_action)
 function cancel_action() {
-    history.go(-2)
+    history.go(-1)
 }

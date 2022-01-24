@@ -5,7 +5,7 @@
     align-items: center;
     gap: 1rem;
 
-    margin: auto auto 3rem;
+    margin: auto auto 4rem;
 }
 .trocar_atual_anterior button{
     background-color: #55a08a;
@@ -15,7 +15,7 @@
 
     border: none;
     border-radius: 10px;
-
+    cursor: pointer;
     padding: 0.5rem 2rem;
     transition: border 1s, background-color 1s;
 }
@@ -24,7 +24,6 @@
     color: #55a08a;
     border: 2px solid #55a08a;
 }
-
-h1{
-    margin-left: 1rem;
+#reservas_anteriores{
+    display: none;
 }

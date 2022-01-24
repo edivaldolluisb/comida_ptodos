@@ -45,11 +45,10 @@
             <p>Suas reservas</p>
         </div>
         <div class="trocar_atual_anterior">
-            <button>Atuais</button>
-            <button>Anteriores</button>
+            <button id="reserva_atual_btn">Atuais</button>
+            <button id="reserva_anterior_btn">Anteriores</button>
         </div>
         <section id="favoritos">
-            <h1>Suas reservas atuais</h1>
             <section id="produtos">
                 <div id="produto_itens">
                     <div class="produto_iten">
@@ -143,10 +142,85 @@
                 </div>
             </section>
         </section>
+        <section id="reservas_anteriores">
+            <section id="produtos">
+                <div id="produto_itens">
+                    <div class="produto_iten">
+                        <img src="./imagens/pexels-nadin-trosh-4356100.jpg" alt="">
+                        <div class="produto_detail">
+                            <p>Minipreço - Aveiro</p>
+                            <p>Magic Box</p>
+                            <p>Ontem 20:00</p>
+                        </div>
+                    </div>
+                    <div class="produto_iten">
+                        <img src="./imagens/pexels-nadin-trosh-4356100.jpg" alt="">
+                        <div class="produto_detail">
+                            <p>Minipreço - Aveiro</p>
+                            <p>Magic Box</p>
+                            <p>Ontem 20:00</p>
+                        </div>
+                    </div>
+                    <div class="produto_iten">
+                        <img src="./imagens/pexels-nadin-trosh-4356100.jpg" alt="">
+                        <div class="produto_detail">
+                            <p>Minipreço - Aveiro</p>
+                            <p>Magic Box</p>
+                            <p>Ontem 20:00</p>
+                        </div>
+                    </div>
+                    <div class="produto_iten">
+                        <img src="./imagens/pexels-daria-shevtsova-704971.jpg" alt="">
+                        <div class="produto_detail">
+                            <p>Minipreço - Aveiro</p>
+                            <p>Magic Box</p>
+                            <p>Ontem 20:00</p>
+                        </div>
+                    </div>
+                    <div class="produto_iten">
+                        <img src="./imagens/pexels-nadin-trosh-4356100.jpg" alt="">
+                        <div class="produto_detail">
+                            <p>Minipreço - Aveiro</p>
+                            <p>Magic Box</p>
+                            <p>Ontem 20:00</p>
+                        </div>
+                    </div>
+                    <div class="produto_iten">
+                        <img src="./imagens/pexels-daria-shevtsova-704971.jpg" alt="">
+                        <div class="produto_detail">
+                            <p>Minipreço - Aveiro</p>
+                            <p>Magic Box</p>
+                            <p>Ontem 20:00</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
     </main>
 
     <script src="./js/menu.js"></script>
     <script src="./js/ver_produto.js"></script>
+
+    <script>
+        var atual = window.document.querySelector('#reserva_atual_btn')
+        var anterior = window.document.querySelector('#reserva_anterior_btn')
+        var atual_section = window.document.querySelector('#favoritos')
+        var anterior_section = window.document.querySelector('#reservas_anteriores')
+
+        anterior.addEventListener('click', func_anterior)
+        atual.addEventListener('click', func_atual)
+
+        function func_anterior() {
+            atual_section.style.display = 'none'
+            anterior_section.style.display = 'block'
+        }
+        function func_atual() {
+            atual_section.style.display = 'block'
+            anterior_section.style.display = 'none'
+        }
+
+    </script>
 </body>
 
 </html>

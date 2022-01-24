@@ -17,6 +17,7 @@ h1{
 .mini_menus{
     display: flex;
     justify-content: flex-end;
+    flex-flow: row wrap;
     gap: 1rem;
 }
 .mini_menus a/*, .mini_menus button*/{
@@ -51,6 +52,7 @@ h1{
     font-size: 1.3rem;
     margin-bottom: 1rem;
     padding: 0.3rem;
+    min-width: 25rem;
 }
 .dados1, .dados2{
     display: flex;
@@ -129,4 +131,14 @@ h1{
         margin: auto;
     }
     
+}
+@media screen and (max-width:660px) {
+    .mini_menus{
+        max-width: 30rem;
+    }   
+    .lista_reservas{
+        overflow-x: auto;
+    }
+
+
 }

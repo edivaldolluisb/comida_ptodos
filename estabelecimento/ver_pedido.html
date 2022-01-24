@@ -39,7 +39,7 @@
                     <p>Data da reserva: Hoje, 11:21</p>
                 </div>
                 <div class="cancelar_finalizarreserva">
-                    <button>eliminar</button>
+                    <button type="button" id="f_eliminacao">eliminar</button>
                     <button type="button" id="f_atualizacao">registar pedido</button>
                 </div>
             </div>
@@ -56,11 +56,33 @@
             </div>
         </section>
 
+        <!--caixa de dialogo de eliminar registo-->
+        <section id="processo_eliminado_succes">
+            <div class="processo_finalizado_succes">
+                <i class="fa fa-check-circle"></i>
+                <p>Eliminado com sucesso!</p>
+                <a href="./estabelecimento_produtos.html"><button>ok</button></a>
+            </div>
+        </section>
+
     </main>
 
 
     <script src="../js/menu.js"></script>
     <script src="./js/processo_finalizado.js"></script>
+    <!--eliminar pedido-->
+    <script>
+        var btn_elimicacao = window.document.querySelector('#f_eliminacao')
+        var p_eliminado_succes = window.document.querySelector('#processo_eliminado_succes')
+
+
+        btn_elimicacao.addEventListener('click', f_eliminar)
+
+        function f_eliminar() {
+            p_eliminado_succes.style.display = 'grid'
+        }
+
+    </script>
 </body>
 
 </html>

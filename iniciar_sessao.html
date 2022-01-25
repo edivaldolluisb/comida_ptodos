@@ -42,7 +42,8 @@
                     <label for="remember_me_button">Remember-me</label>
                 </div>
 
-                <a class="iniciar_sessao_temporario" href="./reservas_categoria.html" style="margin-top: 3rem; color: #fff;">Iniciar Sessão</a>
+                <a class="iniciar_sessao_temporario" href="./reservas_categoria.html"
+                    style="margin-top: 3rem; color: #fff;">Iniciar Sessão</a>
                 <!--<button type="submit">Iniciar Sessão</button>-->
                 <a href="./registo_cliente.html" id="botao_registar">Registar-se</a>
             </form>
@@ -50,6 +51,53 @@
 
 
     </section>
+
+    <!--processo de validação-->
+    <script>
+        var inciar = window.document.querySelector('.iniciar_sessao_temporario')
+        inciar.addEventListener('mouseover', iniciar)
+        function iniciar() {
+            var email = window.document.querySelector('input[type=email]').value
+            var password = window.document.querySelector('input[type=password]').value
+
+            userlocal = JSON.parse(localStorage.user)
+            email_local = userlocal.email
+            password_local = userlocal.password
+
+            console.log(email)
+            console.log(email_local)
+
+            console.log(password)
+            console.log(password_local)
+
+
+            if (email != email_local || password != password_local) {
+                console.log('login falhou! eamil ou password errada.')
+                window.alert('login falhou! email ou password errada.')
+            } else {
+                console.log('login feito!')
+
+                let tipo_de_usuario = userlocal.tipo;
+                switch (tipo_de_usuario) {
+                    case 'cliente_comum':
+                        console.log('tipo de usuario(cliente_comum)')
+                        window.location = 'https://edivaldolluisb.github.io/comida_ptodos/reservas_categoria.html'
+                        break;
+                    case 'estabelecimento':
+                        console.log('tipo de usuario(estabelecimento)')
+                        window.location = 'https://edivaldolluisb.github.io/comida_ptodos/estabelecimento/estabelecimento_index.html'
+                        break;
+                    case 'associacao_social':
+                        console.log('tipo de usuario(associacao_social)')
+                        window.location = 'https://edivaldolluisb.github.io/comida_ptodos/associacao/reservas_categoria.html'
+                        break;
+
+                }
+            }
+
+        }
+
+    </script>
 
 </body>
 

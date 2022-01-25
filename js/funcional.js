@@ -41,16 +41,32 @@ registar_user.addEventListener("click", function () {
 
     user = {
         nome: nome_comp,
-        email:email,
-        nif:nif,
-        password:password_cof,
+        email: email,
+        nif: nif,
+        password: password_cof,
         tipo: sel.value
     }
     localStorage.clear()
     localStorage.user = JSON.stringify(user)
     usuario = JSON.parse(localStorage.user)
     console.log(usuario.nome)
-    
+
+    /*enviar para outra página*/
+    switch (tipo_de_usuario) {
+        case 'cliente_comum':
+            console.log('tipo de usuario(cliente_comum)')
+            window.location = 'https://edivaldolluisb.github.io/comida_ptodos/reservas_categoria.html'
+            break;
+        case 'estabelecimento':
+            console.log('tipo de usuario(estabelecimento)')
+            window.location = 'https://edivaldolluisb.github.io/comida_ptodos/estabelecimento/estabelecimento_index.html'
+            break;
+        case 'associacao_social':
+            console.log('tipo de usuario(associacao_social)')
+            window.location = 'https://edivaldolluisb.github.io/comida_ptodos/associacao/reservas_categoria.html'
+            break;
+
+    }
 
 
 

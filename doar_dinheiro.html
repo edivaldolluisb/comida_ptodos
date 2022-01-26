@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="./css/ver_produto.css">
     <link rel="stylesheet" href="./css/reserva.css">
     <link rel="stylesheet" href="./css/doar_dianheiro.css">
 </head>
@@ -53,8 +54,8 @@
                         1250-044 Lisboa Lisboa</p>
                 </div>
                 <div class="botao_iban_div">
-                    <input type="text" value="PT50-0010-0000-5277-6930-0014-8" onclick="pegar_id(this.value)" id="001">
-                    <label for="001">Copiar</button>
+                    <input type="text" value="PT50-0010-0000-5277-6930-0014-8" onclick="pegar_id(this.value), abrir_sessao()" id="001">
+                    <label for="001">Doar</button>
                 </div>
             </div>
             <div class="instituicao">
@@ -67,8 +68,8 @@
                         1350-026 Lisboa Lisboa</p>
                 </div>
                 <div class="botao_iban_div">
-                    <input type="text" value="PT50-0033-0000-0006-0328-6660-5" onclick="pegar_id(this.value)" id="002">
-                    <label for="002">Copiar</button>
+                    <input type="text" value="PT50-0033-0000-0006-0328-6660-5" onclick="pegar_id(this.value), abrir_sessao()" id="002">
+                    <label for="002">Doar</button>
                 </div>
             </div>
             <div class="instituicao">
@@ -81,8 +82,8 @@
                         1200-432 Lisboa Lisboa</p>
                 </div>
                 <div class="botao_iban_div">
-                    <input type="text" value="PT50-0010-0000-5640-0310-0015-1" onclick="pegar_id(this.value)" id="003">
-                    <label for="003">Copiar</button>
+                    <input type="text" value="PT50-0010-0000-5640-0310-0015-1" onclick="pegar_id(this.value), abrir_sessao()" id="003">
+                    <label for="003">Doar</button>
                 </div>
             </div>
             <div class="instituicao">
@@ -95,8 +96,8 @@
                         7050-235 Montemor-o-Novo Évora</p>
                 </div>
                 <div class="botao_iban_div">
-                    <input type="text" value="PT50-0010-0000-3330-1440-0017-4" onclick="pegar_id(this.value)" id="004">
-                    <label for="004">Copiar</button>
+                    <input type="text" value="PT50-0010-0000-3330-1440-0017-4" onclick="pegar_id(this.value), abrir_sessao()" id="004">
+                    <label for="004">Doar</button>
                 </div>
             </div>
             <div class="instituicao">
@@ -109,8 +110,8 @@
                         7050-235 Montemor-o-Novo Évora</p>
                 </div>
                 <div class="botao_iban_div">
-                    <input type="text" value="PT50-0010-0000-3330-5550-0555-5" onclick="pegar_id(this.value)" id="005">
-                    <label for="005">Copiar</button>
+                    <input type="text" value="PT50-0010-0000-3330-5550-0555-5" onclick="pegar_id(this.value), abrir_sessao()" id="005">
+                    <label for="005">Doar</button>
                 </div>
             </div>
             <div class="instituicao">
@@ -123,8 +124,8 @@
                         6000-106 Castelo Branco Castelo Branco</p>
                 </div>
                 <div class="botao_iban_div">
-                    <input type="text" value="PT50-0036-0206-9910-0027-0547-0" onclick="pegar_id(this.value)" id="006">
-                    <label for="006">Copiar</button>
+                    <input type="text" value="PT50-0036-0206-9910-0027-0547-0" onclick="pegar_id(this.value), abrir_sessao()" id="006">
+                    <label for="006">Doar</button>
                 </div>
             </div>
             <div class="instituicao">
@@ -137,8 +138,8 @@
                         1050-121 Lisboa Lisboa</p>
                 </div>
                 <div class="botao_iban_div">
-                    <input type="text" value="PT50-0007-0000-0003-0526-0000-1" onclick="pegar_id(this.value)" id="007">
-                    <label for="007">Copiar</button>
+                    <input type="text" value="PT50-0007-0000-0003-0526-0000-1" onclick="pegar_id(this.value), abrir_sessao()" id="007">
+                    <label for="007">Doar</button>
                 </div>
             </div>
             <div class="instituicao">
@@ -151,13 +152,50 @@
                         1050-121 Lisboa Lisboa</p>
                 </div>
                 <div class="botao_iban_div">
-                    <input type="text" value="PT50-0007-0000-0003-0526-6772-3" onclick="pegar_id(this.value)" id="008">
-                    <label for="008">Copiar</button>
+                    <input type="text" value="PT50-0007-0000-0003-0526-6772-3" onclick="pegar_id(this.value), abrir_sessao()" id="008">
+                    <label for="008">Doar</button>
                 </div>
             </div>
 
         </div>
     </main>
+    <section id="quantidade_pagamento">
+        <form action="">
+            <!--Adicionar dados do cartão-->
+            <div id="adicionar_dados_cartao" class="selecionar_quantidade_produto ">
+                <p><i id="fechar_dados_card" class="fas fa-arrow-left"></i>Cartão de Pagamento</p>
+
+                <div class="input_dados_cartao">
+                    <input type="number" class="input1" placeholder="Numero de cartão">
+                    <div>
+                        <input type="number" class="input2" placeholder="Data de validade">
+                        <input type="number" class="input3" placeholder="CVC/CVV">
+                    </div>
+
+                </div>
+                <div class="salvar_dados_pagamento">
+                    <label for="salvar_dados">Salvar para próximo pagamento</label>
+                    <label class="switch">
+                        <input id="salvar_dados" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="cancelar_pagar">
+                    <button>Cancelar</button>
+                    <!--link temporário, apagar depois da apresentação-->
+                    <a href="./processo_finalizado.html">
+                        <button style="background-color: #55a08a;
+                    color: #fff;
+                    font-weight: bold;" type="button">Pagar</button>
+                    </a>
+                    <!--<button>Pagar</button>-->
+
+                </div>
+
+            </div>
+        </form>
+
+    </section>
 
 
     <script src="./js/menu.js"></script>

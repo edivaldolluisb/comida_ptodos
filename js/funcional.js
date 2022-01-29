@@ -46,7 +46,7 @@ registar_user.addEventListener("click", function () {
         password: password_cof,
         tipo: sel.value
     }
-    localStorage.clear()
+   /* localStorage.clear()*/
     localStorage.user = JSON.stringify(user)
     usuario = JSON.parse(localStorage.user)
     console.log(usuario.nome)

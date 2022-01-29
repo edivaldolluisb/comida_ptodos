@@ -41,10 +41,12 @@
     <main>
         <section id="mais_info_options">
             <ul>
-                <li><a href="./reservas_realizadas.html" class="mais_info_item"><i class="fas fa-address-book"></i> Reservas</a></li>
+                <li><a href="./reservas_realizadas.html" class="mais_info_item"><i class="fas fa-address-book"></i>
+                        Reservas</a></li>
                 <li><button id="abrir-detalhes-conta" class="mais_info_item"><i class="fas fa-user"></i> Detalhes da
                         conta</button></li>
-                <li><a href="./fazer_reclamacao.html" class="mais_info_item"><i class="far fa-flag"></i> Fazer reclamações</a></li>
+                <li><a href="./fazer_reclamacao.html" class="mais_info_item"><i class="far fa-flag"></i> Fazer
+                        reclamações</a></li>
                 <li><button class="mais_info_item"><i class="far fa-question-circle"></i> Ajuda</button></li>
                 <li><a href="#" class="mais_info_item"><i class="fas fa-angle-right"></i> Termos e condições</a></li>
             </ul>
@@ -74,7 +76,8 @@
                     </div>
                     <div>
                         <label for="morada_user">Morada</label>
-                        <input type="text" id="morada_user" value="Local: R.Arco do Carvalhão 282 Lisboa 1350 - 026 Lisboa Portugal" readonly>
+                        <input type="text" id="morada_user"
+                            value="Local: R.Arco do Carvalhão 282 Lisboa 1350 - 026 Lisboa Portugal" readonly>
                     </div>
                     <div id="buttons">
                         <button type="button" id="btn_cancelar">Cancelar</button>
@@ -146,6 +149,18 @@
             editar_btn.style.display = 'inline-block'
         }
 
+        /* values local storage*/
+
+        usuario = JSON.parse(localStorage.user)
+        console.log(usuario.nome)
+
+        input_nome.value = usuario.nome
+        input_email.value = usuario.email
+        /*input_tel*/
+        input_nif.value = usuario.nif
+        /*input_morada*/
+
+        
     </script>
     <script src="./js/menu.js"></script>
 </body>

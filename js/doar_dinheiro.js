@@ -17,11 +17,24 @@ var fechar_quantidade = window.document.querySelector('#fechar_quantidade')
 var fechar_metodo_pagamento = window.document.querySelector('#fechar_metodo_pagamento')
 var fechar_dados_cartao = window.document.querySelector('#fechar_dados_card')
 
+/*pegar todos os botões*/
+var allButtons = document.querySelectorAll('button[class^=btn_doar]');
+console.log("Found", allButtons.length, "button which class starts with “btn_doar”.");
 
+/*pegar todos os botões*/
+for (var i = 0; i < allButtons.length; i++) {
+  allButtons[i].addEventListener('click', function() {
+    console.clear();
+    console.log("You clicked:", this.innerHTML);
+
+    /*abrir a sessão de quantidade*/
+    abrir_quant()
+  });
+}
 
 
 /*abrir*/
-abrir_quantidade.addEventListener("click", abrir_quant);
+/*abrir_quantidade.addEventListener("click", abrir_quant);*/
 
 function abrir_quant() {
     sessao.style.display = 'block'

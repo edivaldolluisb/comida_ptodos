@@ -41,29 +41,18 @@ h1{
     text-align: justify;
 }
 .botao_iban_div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     margin-top: 1rem;
 }
-.botao_iban_div input{
-    width: 70%;
-    padding: 0.3rem;
-    border: none;
-    border-radius: 3px;
-    font-weight: bold;
-}
-.instituicao label{
-    margin: auto;
+
+.instituicao button{
+    width: 100%; 
+    text-align: center;
     border: none;
     border-radius: 3px;
     padding: 0.4rem;
     color: #fff;
     background-color: #55a08a;
     font-weight: bold;
-    cursor: pointer;
-
 }
 
 

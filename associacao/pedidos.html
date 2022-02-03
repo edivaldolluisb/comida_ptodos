@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="../css/reserva.css">
     <link rel="stylesheet" href="../estabelecimento/css/estabelecimento_index.css">
+    <link rel="stylesheet" href="./css/pedidos.css">
 
 
 </head>
@@ -44,6 +45,9 @@
         </nav>
     </header>
     <main>
+        <div id="pedidos_doacoes">
+            <button>Pedidos</button><button>Doações</button>
+        </div>
 
         <section id="listar_produtos">
             <h1>Pedidos</h1>
@@ -51,7 +55,7 @@
             <div class="lista_reservas">
                 <div class="reserva_listada">
                     <div class="dados1">
-                        <p class="nome_associacao">Minipreço - Aveiro</p>
+                        <p class="nome_estabelecimento">Minipreço - Aveiro</p>
                     </div>
                     <div class="dados2">
                         <p>Hoje, 11:21</p>
@@ -60,10 +64,88 @@
                 </div>
                 <div class="reserva_listada">
                     <div class="dados1">
-                        <p class="nome_associacao">Vitaminas - Fórum Aveiro</p>
+                        <p class="nome_estabelecimento">Vitaminas - Fórum Aveiro</p>
                     </div>
                     <div class="dados2">
                         <p>Hoje, 12:41</p>
+                        <a href="./ver_pedido.html">ver</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="listar_doacoes">
+            <h1>Doações</h1>
+
+            <div class="lista_reservas">
+                <div class="reserva_listada">
+                    <div class="dados1">
+                        <p class="doacao_recebida">Minipreço - Aveiro</p>
+                    </div>
+                    <div class="dados2">
+                        <p>Hoje, 11:21</p>
+                        <a href="./ver_pedido.html">ver</a>
+                    </div>
+                </div>
+                <div class="reserva_listada">
+                    <div class="dados1">
+                        <p class="doacao_recebida">Vitaminas - Fórum Aveiro</p>
+                    </div>
+                    <div class="dados2">
+                        <p>Hoje, 12:41</p>
+                        <a href="./ver_pedido.html">ver</a>
+                    </div>
+                </div>
+                <div class="reserva_listada">
+                    <div class="dados1">
+                        <p class="doacao_recebida">Saladas +</p>
+                    </div>
+                    <div class="dados2">
+                        <p>Hoje, 18:30</p>
+                        <a href="./ver_pedido.html">ver</a>
+                    </div>
+                </div>
+                <div class="reserva_listada">
+                    <div class="dados1">
+                        <p class="doacao_recebida">Bema</p>
+                    </div>
+                    <div class="dados2">
+                        <p>Hoje, 16:00 - 16:15</p>
+                        <a href="./ver_pedido.html">ver</a>
+                    </div>
+                </div>
+                <div class="reserva_listada">
+                    <div class="dados1">
+                        <p class="doacao_recebida">Wok Home</p> 
+                    </div>
+                    <div class="dados2">
+                        <p>Hoje, 23:00 - 23:15</p>
+                        <a href="./ver_pedido.html">ver</a>
+                    </div>
+                </div>
+                <div class="reserva_listada">
+                    <div class="dados1">
+                        <p class="doacao_recebida">Nestlé Maggi - Aveiro</p>
+                    </div>
+                    <div class="dados2">
+                        <p>Hoje, 09:15 - 17:30</p>
+                        <a href="./ver_pedido.html">ver</a>
+                    </div>
+                </div>
+                <div class="reserva_listada">
+                    <div class="dados1">
+                        <p class="doacao_recebida">Arte Doce</p>
+                    </div>
+                    <div class="dados2">
+                        <p>Hoje, 20:00 - 20:30</p>
+                        <a href="./ver_pedido.html">ver</a>
+                    </div>
+                </div>
+                <div class="reserva_listada">
+                    <div class="dados1">
+                        <p class="doacao_recebida">Doces Salinas</p> 
+                    </div>
+                    <div class="dados2">
+                        <p>Hoje, 19:30 - 20:00</p>
                         <a href="./ver_pedido.html">ver</a>
                     </div>
                 </div>
@@ -75,7 +157,7 @@
 
 
     <script src="../js/menu.js"></script>
-    <script src="../associacao/js/pedidos.js"></script>
+    <script src="./js/pedidos.js"></script>
 </body>
 
 </html>

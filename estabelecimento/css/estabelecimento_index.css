@@ -4,7 +4,7 @@
 }
 
 
-#listar_produtos{
+#listar_produtos, #listar_doacoes /*id da lista de doações da associação*/{
     width: 70%;
     margin: auto;
 }
@@ -126,7 +126,7 @@ h1{
     
 }
 @media screen and (max-width:800px) {
-    #listar_produtos{
+    #listar_produtos, #listar_doacoes{
         width: 90%;
         margin: auto;
     }

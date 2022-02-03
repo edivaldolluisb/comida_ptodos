@@ -1,0 +1,29 @@
+
+/* #listar_doacoes*//* a estilização desse id encontra-se no css 
+do estabelecimento junto ao id listar produtos*/
+#listar_doacoes{
+    display: none;
+}
+
+#pedidos_doacoes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    margin: 4rem auto;
+}
+#pedidos_doacoes button{
+    border: 2px solid #55a08a;
+    padding: 0.3rem 1.5rem;
+    background-color: #55a08a;
+    font-weight: bold;
+    color: #fff;
+}
+#pedidos_doacoes button:hover{
+    border: 2px solid #55a08a;
+    padding: 0.3rem 1.5rem;
+    background-color: #fff;
+    font-weight: bold;
+    color: #55a08a;
+}

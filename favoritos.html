@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="./css/reserva.css">
     <link rel="stylesheet" href="./css/favoritos.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,7 +41,7 @@
         </nav>
     </header>
     <main>
-        <div class="header_favoritos">  
+        <div class="header_favoritos">
             <a href="./reservas_categoria.html"><i class="fas fa-angle-left"></i></a>
             <p>Favoritos</p>
         </div>
@@ -47,7 +49,8 @@
             <section id="produtos">
                 <div id="produto_itens">
                     <div class="produto_iten">
-                        <img src="https://images.pexels.com/photos/2601015/pexels-photo-2601015.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                        <img src="https://images.pexels.com/photos/2601015/pexels-photo-2601015.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="">
                         <div class="produto_detail">
                             <p>Bema</p>
                             <p>Magic Box</p>
@@ -56,7 +59,8 @@
                         </div>
                     </div>
                     <div class="produto_iten">
-                        <img src="https://images.pexels.com/photos/4253711/pexels-photo-4253711.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                        <img src="https://images.pexels.com/photos/4253711/pexels-photo-4253711.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="">
                         <div class="produto_detail">
                             <p>SweetLove4Cakes</p>
                             <p>Pastelaria</p>
@@ -65,7 +69,8 @@
                         </div>
                     </div>
                     <div class="produto_iten">
-                        <img src="https://images.pexels.com/photos/6275112/pexels-photo-6275112.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                        <img src="https://images.pexels.com/photos/6275112/pexels-photo-6275112.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="">
                         <div class="produto_detail">
                             <p>restaurante O Columbófilo</p>
                             <p>Refeição</p>
@@ -74,7 +79,8 @@
                         </div>
                     </div>
                     <div class="produto_iten">
-                        <img src="https://images.pexels.com/photos/5994861/pexels-photo-5994861.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                        <img src="https://images.pexels.com/photos/5994861/pexels-photo-5994861.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="">
                         <div class="produto_detail">
                             <p>Minipreço - Aveiro</p>
                             <p>Magic Box</p>
@@ -83,7 +89,8 @@
                         </div>
                     </div>
                     <div class="produto_iten">
-                        <img src="https://images.pexels.com/photos/6574538/pexels-photo-6574538.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                        <img src="https://images.pexels.com/photos/6574538/pexels-photo-6574538.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="">
                         <div class="produto_detail">
                             <p>Frutarias e Quintas do Ramalho</p>
                             <p>Magic Box</p>
@@ -97,7 +104,27 @@
     </main>
 
     <script src="./js/menu.js"></script>
-    <script src="./js/ver_produto.js"></script>
+    <!--<script src="./js/ver_produto.js"></script>-->
+
+    <script>
+        /*pegar todos os botões*/
+        var allhearts = document.querySelectorAll('i[class^=fas]');
+        console.log("Found", allhearts.length, "icons which class starts with “fa-heart”.");
+
+        /*pegar todos os botões*/
+        for (var i = 0; i < allhearts.length; i++) {
+            allhearts[i].addEventListener('click', function () {
+                console.clear();
+                console.log("You clicked:", this.innerHTML);
+                console.log('jquey a funcionar')
+                $(this).addClass("far");
+                $(this).removeClass("fas");
+
+                /*abrir a sessão de quantidade*/
+                abrir_quant()
+            });
+        }
+    </script>
 </body>
 
 </html>

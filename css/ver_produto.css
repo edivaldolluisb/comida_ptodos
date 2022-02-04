@@ -35,7 +35,26 @@ main{
 .favorito i{
     font-size: 1.5rem;
     color: #55a08a;
+    cursor: pointer;
 }
+#colocar_como_favorito{
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.pulse {
+    animation: pulse-animation 2s infinite;
+  }
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(85, 160, 138, 0.9);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(85, 160, 138, 0);
+    }
+  }
 .favorito p{
     margin-left: 1rem;
 }

@@ -1,4 +1,15 @@
 
+/*colocar como favorito*/
+$(".favorito").click(function(){
+    console.log('jquey a funcionar')
+    $("#colocar_como_favorito").toggleClass("fas");
+  });
+
+
+
+  
+/*sessões*/
+
 var sessao = window.document.querySelector('#quantidade_pagamento')
 
 var abrir_quantidade = window.document.querySelector('#abrir_quantidade_div')

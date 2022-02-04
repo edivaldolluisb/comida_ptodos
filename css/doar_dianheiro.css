@@ -5,7 +5,16 @@ h1{
 
     margin-bottom: 5rem;
 }
-
+.voltar{
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+.voltar a{
+    font-weight: bold;
+    color: #55a089;
+    font-size: 1.5em;
+    text-decoration: none;
+}
 .instituicao_group{
     display: flex;
     justify-content: space-evenly;

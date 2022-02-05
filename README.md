@@ -11,10 +11,6 @@ E que estes estabelecimentos possam doar a associações de apoio social os exce
 
 link do website: https://edivaldolluisb.github.io/comida_ptodos/  
 
-## 📋 SGDD - Style Guide Driven Development
-
-
-
 
 ---
 ⌨️ com ❤️ por [Edivaldo Bonfim](https://github.com/edivaldolluisb) 😊

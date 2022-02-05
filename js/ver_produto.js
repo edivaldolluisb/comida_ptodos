@@ -1,13 +1,13 @@
 
 /*colocar como favorito*/
 $(".favorito").click(function(){
-    console.log('jquey a funcionar')
+    console.log('favorito a funcionar')
     $("#colocar_como_favorito").toggleClass("fas");
   });
 
 
 
-  
+
 /*sessões*/
 
 var sessao = window.document.querySelector('#quantidade_pagamento')

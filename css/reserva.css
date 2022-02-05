@@ -160,6 +160,7 @@
 .produto_detail{
     font-size: 14px;
     font-weight: bold;
+    line-height: 1.6;
 }
 .preco{
     color: #55a08a;

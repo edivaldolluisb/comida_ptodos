@@ -37,6 +37,9 @@
     flex-wrap: wrap;
 
 }
+.produto_detail p{
+    margin-bottom: 0;
+}
 
 /*doaçaõ*/
 #doacao{

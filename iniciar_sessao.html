@@ -71,11 +71,12 @@
             console.log(password_local)
 
 
-            if (email != email_local || password != password_local) {
+            if ((email != email_local || password != password_local) == true) {
                 console.log('login falhou! eamil ou password errada.')
-                window.alert('login falhou! email ou password errada.')
+                /*window.alert('login falhou! email ou password errada.')*/
             } else {
                 console.log('login feito!')
+                alert('login feito!')
 
                 let tipo_de_usuario = userlocal.tipo;
                 switch (tipo_de_usuario) {

@@ -1,11 +1,9 @@
 
 /*colocar como favorito*/
-$(".favorito").click(function(){
+$(".favorito").click(function () {
     console.log('favorito a funcionar')
     $("#colocar_como_favorito").toggleClass("fas");
-  });
-
-
+});
 
 
 /*sessões*/
@@ -24,8 +22,6 @@ var dados_cartao = window.document.querySelector('#adicionar_dados_cartao')
 var fechar_quantidade = window.document.querySelector('#fechar_quantidade')
 var fechar_metodo_pagamento = window.document.querySelector('#fechar_metodo_pagamento')
 var fechar_dados_cartao = window.document.querySelector('#fechar_dados_card')
-
-
 
 
 /*abrir*/
@@ -74,35 +70,43 @@ var input = window.document.querySelector('#input_prod_qt')
 var output = window.document.querySelector('.preco_tot_final')
 
 reduzir.addEventListener("click", reduzir_qt);
+aumentar.addEventListener("click", aumentar_qt);
+input.addEventListener('click', valor_total_mostrar)
 
-var valor
-var preco
-var preco_total
-preco = parseFloat(output.innerText) 
+var valor, preco, preco_total
 
+preco = parseFloat(output.innerText)
 
+/*reduzir a quantidade do produto*/
 function reduzir_qt() {
 
-    x = parseInt(input.value)
-    if (x > 0) {
+    let x = parseInt(input.value)
+    if (x > 1) {
+        input.value = parseInt(input.value) - 1
         valor = x - 1
         input.value = valor
         preco_total = preco * valor
 
         output.innerText = preco_total
-    } else {
-        input.value = 0
-        output.innerText = preco
     }
-
 }
-aumentar.addEventListener("click", aumentar_qt);
+
+/*aumentar a quantidade do produto*/
 
 function aumentar_qt() {
-    x = parseInt(input.value) + 1
+    let x = parseInt(input.value) + 1
     input.value = x
-
     preco_total = preco * x
+    output.innerText = preco_total
+}
+
+/*atualizar a quantidade do produto pelo input*/
+
+function valor_total_mostrar() {
+    valor = parseInt(input.value) 
+    console.log(valor)
+    preco_total = preco * valor
+    console.log(preco_total)
 
     output.innerText = preco_total
 }

@@ -97,7 +97,7 @@
                     <p><i id="fechar_quantidade" class="fas fa-arrow-left"></i>Quantidade</p>
                     <div class="introduzir_quantidade">
                         <i class="fas fa-minus-circle"></i>
-                        <input type="number" value="1" name="" id="input_prod_qt">
+                        <input type="number" value="1" name="" id="input_prod_qt" min="1">
                         <i class="fas fa-plus-circle"></i>
                     </div>
 
@@ -134,9 +134,7 @@
                 valor = x - 1
                 input.value = valor
 
-            } else {
-                input.value = 0
-            }
+            } 
         }
         aumentar.addEventListener("click", aumentar_qt);
         /*aumentar quantidade*/

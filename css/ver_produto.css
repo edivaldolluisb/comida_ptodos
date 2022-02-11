@@ -113,6 +113,7 @@ main{
 }
 #escolher_reserva button{
     background-color: #55a08a;
+    color: #fff;
     font-weight: bolder;
     border: 2px solid #55a08a;
     border-radius: 3px;
@@ -121,7 +122,7 @@ main{
     transition: background-color 1s;
 }
 #escolher_reserva button:hover{
-    color: #55a08a;
+    color: #2F4858;
     background-color: #fff;
 }
 

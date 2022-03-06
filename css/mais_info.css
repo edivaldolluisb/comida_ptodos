@@ -73,6 +73,7 @@ form input{
 }
 #buttons button{
     border:  none;
+    cursor: pointer;
     border-radius: 3px;
     background-color: #fff;
     font-weight: bold;

@@ -45,6 +45,7 @@ h1{
 }
 .botoes button{
     border: none;
+    cursor: pointer;
     background-color: #55a08a;
     color: #fff;
     padding: 0.4rem 1rem;
